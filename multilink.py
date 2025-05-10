@@ -1,16 +1,51 @@
 import streamlit as st
+import requests
+from streamlit_lottie import st_lottie
 
 # Configuration de la page
 st.set_page_config(page_title="Ma Boutique", page_icon="👗", layout="centered")
 
-# Image de couverture (remplace par le bon chemin si nécessaire)
+# CSS : fond en dégradé doux
+st.markdown("""
+    <style>
+    body {
+        background: linear-gradient(135deg, #FDEFF9 0%, #FFF0F5 100%);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Fonction pour charger une animation Lottie depuis une URL
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# Charger une animation Lottie (ex: mode/féminin)
+lottie_url = "https://assets2.lottiefiles.com/private_files/lf30_p8p8v8xh.json"
+lottie_animation = load_lottieurl(lottie_url)
+
+# Afficher l'image de couverture
 st.image("0e0eb1bd-6f00-44f0-a103-1a752c0f36dd.png", use_column_width=True)
+
+# Afficher l'animation Lottie
+if lottie_animation:
+    st_lottie(lottie_animation, height=200, key="fashion")
 
 # Titre stylisé
 st.markdown("""
     <h2 style='text-align: center; color: #D81B60; font-family: "Georgia", serif;'>
         🌸 Bienvenue dans ma boutique féminine 🌸
     </h2>
+""", unsafe_allow_html=True)
+
+# Texte de présentation
+st.markdown("""
+    <p style='text-align: center; font-size: 18px;'>
+        Bienvenue dans un univers où l'élégance rencontre la modernité 🌟<br>
+        Découvrez une sélection unique de vêtements et accessoires soigneusement choisis pour mettre en valeur votre style et votre féminité 💃<br>
+        Livraison rapide – Service client disponible – Nouveautés chaque semaine !
+    </p>
 """, unsafe_allow_html=True)
 
 # Boutons de redirection stylisés
@@ -38,4 +73,6 @@ st.markdown("""
     <a class="link-button" href="https://instagram.com/tonprofil" target="_blank">💖 Instagram</a>
     <a class="link-button" href="https://tiktok.com/@tonprofil" target="_blank">🎀 TikTok</a>
     <a class="link-button" href="https://tonsiteweb.com" target="_blank">🛍️ Boutique en ligne</a>
+    <a class="link-button" href="https://wa.me/33612345678" target="_blank">📱 Contact WhatsApp</a>
+    <a class="link-button" href="mailto:contact@tonsiteweb.com" target="_blank">📧 Contact par Email</a>
 """, unsafe_allow_html=True)
