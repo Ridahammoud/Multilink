@@ -58,7 +58,7 @@ st.markdown("""
     }
     </style>
 
-    <a class="link-button" href="https://www.instagram.com/weedress_/" target="_blank">💖 Instagram</a>
+    <a class="link-button" href="https://instagram.com/weedress_" target="_blank">💖 Instagram</a>
     <a class="link-button" href="https://tiktok.com/@weedress_" target="_blank">🎀 TikTok</a>
     <a class="link-button" href="https://www.weedress.com" target="_blank">🛍️ Boutique en ligne</a>
     <a class="link-button" href="https://weedress.buylive.fr" target="_blank">📱 Paiement en Live</a>
