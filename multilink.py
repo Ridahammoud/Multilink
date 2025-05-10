@@ -5,15 +5,6 @@ from streamlit_lottie import st_lottie
 # Configuration de la page
 st.set_page_config(page_title="Ma Boutique", page_icon="👗", layout="centered")
 
-# CSS : fond en dégradé doux
-st.markdown("""
-    <style>
-    body {
-        background: linear-gradient(135deg, #FDEFF9 0%, #FFF0F5 100%);
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 # Fonction pour charger une animation Lottie depuis une URL
 def load_lottieurl(url):
     r = requests.get(url)
@@ -24,9 +15,6 @@ def load_lottieurl(url):
 # Charger une animation Lottie (ex: mode/féminin)
 lottie_url = "https://assets2.lottiefiles.com/private_files/lf30_p8p8v8xh.json"
 lottie_animation = load_lottieurl(lottie_url)
-
-# Afficher l'image de couverture (utiliser `use_container_width=True`)
-st.image("0e0eb1bd-6f00-44f0-a103-1a752c0f36dd.png", use_container_width=True)
 
 # Afficher l'animation Lottie
 if lottie_animation:
