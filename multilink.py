@@ -25,8 +25,8 @@ def load_lottieurl(url):
 lottie_url = "https://assets2.lottiefiles.com/private_files/lf30_p8p8v8xh.json"
 lottie_animation = load_lottieurl(lottie_url)
 
-# Afficher l'image de couverture
-st.image("0e0eb1bd-6f00-44f0-a103-1a752c0f36dd.png", use_column_width=True)
+# Afficher l'image de couverture (utiliser `use_container_width=True`)
+st.image("0e0eb1bd-6f00-44f0-a103-1a752c0f36dd.png", use_container_width=True)
 
 # Afficher l'animation Lottie
 if lottie_animation:
