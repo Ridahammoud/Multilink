@@ -59,8 +59,8 @@ st.markdown("""
     </style>
 
     <a class="link-button" href="https://instagram.com/tonprofil" target="_blank">💖 Instagram</a>
-    <a class="link-button" href="https://tiktok.com/@tonprofil" target="_blank">🎀 TikTok</a>
-    <a class="link-button" href="https://tonsiteweb.com" target="_blank">🛍️ Boutique en ligne</a>
-    <a class="link-button" href="https://wa.me/33612345678" target="_blank">📱 Contact WhatsApp</a>
-    <a class="link-button" href="mailto:contact@tonsiteweb.com" target="_blank">📧 Contact par Email</a>
+    <a class="link-button" href="https://tiktok.com/@weedress_" target="_blank">🎀 TikTok</a>
+    <a class="link-button" href="https://www.weedress.com" target="_blank">🛍️ Boutique en ligne</a>
+    <a class="link-button" href="https://wa.me/33612345678" target="_blank">📱 Paiement en Live</a>
+    <a class="link-button" href="mailto:weedressbylive@gmail.com" target="_blank">📧 Contact par Email</a>
 """, unsafe_allow_html=True)
