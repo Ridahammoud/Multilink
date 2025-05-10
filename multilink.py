@@ -12,6 +12,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+
 # Charger une animation Lottie (ex: mode/féminin)
 lottie_url = "https://assets2.lottiefiles.com/private_files/lf30_p8p8v8xh.json"
 lottie_animation = load_lottieurl(lottie_url)
